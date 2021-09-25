@@ -359,9 +359,9 @@ Add language colors and than hello worlds for all languages:
 
 (You need 3 hex color values for language colors. You can pick colors from flags of the biggest/oldest countries in which language is spoken. And you need translation of "Hello World" for every languages) 
 
-<img src="./images/admin.png">
-<img src="./images/languagecolor.png">
-<img src="./images/helloworld.png">
+![Image of Admin Panel](https://github.com/towendigo/django_with_svelte/blob/master/images/Admin.PNG)
+![Image of Language Color Object](https://github.com/towendigo/django_with_svelte/blob/master/images/LanguageColor.PNG)
+![Image of Hello World Object](https://github.com/towendigo/django_with_svelte/blob/master/images/helloworld.PNG)
 
 If everything is good we are done with models.
 
