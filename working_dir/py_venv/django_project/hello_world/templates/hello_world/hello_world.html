@@ -1,0 +1,33 @@
+{% load static %} {# load static directories #}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>
+        {% autoescape on %}
+           {{values.content.content}} {# Get hello world as title + sanitize #}
+        {% endautoescape %}
+    </title>
+	
+	<link rel='stylesheet' href=" {% static 'apps/hello_world/bundle.css' %} "> {# Get hello_world svelte output for css #}
+
+	{{ values|json_script:"values-json"}} {# Insert data (values) as json with id="values-json" #}
+	<script defer src=" {% static 'apps/hello_world//bundle.js' %} "></script> {# Get hello_world svelte output for js #}
+	
+    <style> 
+        *{ 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style> {# just simple global styling #}
+</head>
+
+<body>
+</body>
+
+</html>
